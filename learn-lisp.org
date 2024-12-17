@@ -1,0 +1,15 @@
+* LEARNING ELISP using Emacs :)
+
+
+* setting variables
+You can create a variable using setq command
+#+NAME: setting variables
+#+BEGIN_SRC elisp
+  ;set the value 0 to variable1
+  (setq variable1 0)
+#+END_SRC
+
+#+RESULTS: setting variables
+: 0
+
+
