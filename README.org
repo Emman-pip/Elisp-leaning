@@ -1,0 +1,9 @@
+* LEARNING ELISP
+This repository is created to track the long learning curve of
+learning elisp (Emacs Lisp).
+
+Lisp (List Processing)is a family of languages that differs that from
+the C family. It extensively uses parenthesis and lists to write
+programs. In fact, elisp is all lists. At this point of writing, elisp
+still seems like a very strange language but I am starting to see the
+glimpse of its beauty and elegance.
