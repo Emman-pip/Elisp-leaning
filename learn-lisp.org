@@ -1,7 +1,8 @@
+* sample
 * LEARNING ELISP using Emacs :)
 
 
-* setting variables
+** setting variables
 You can create a variable using setq command
 #+NAME: setting variables
 #+BEGIN_SRC elisp
@@ -13,3 +14,44 @@ You can create a variable using setq command
 : 0
 
 
+** Defuns
+Defun stand for define function
+
+*** Syntax
+#+NAME: Defun syntax
+#+BEGIN_SRC elisp
+  (defun func-name(arguments)
+    "Documentation of the function"
+    (interactive) ;; optional, interactive if want to be accesible by M-x
+    (Body of the function)
+    )
+#+END_SRC
+
+*** Example
+#+NAME: Example of defun
+#+BEGIN_SRC elisp
+  (defun multiplyByTwo(number)
+    "A function that multiplies the number entered by two."
+    (message "%d doubled is %d" number (* number 2))
+    )
+
+  (multiplyByTwo 10)
+#+END_SRC
+
+#+RESULTS: Example of defun
+: 10 doubled is 20
+
+#+NAME: Example 2 of defun
+#+BEGIN_SRC elisp
+  (defun isGreaterThanFillColumn(number)
+    "A funtiont to evaluate if a number if greater than the current value of fill column variable"
+    (if (< fill-column number)
+	(message "true")
+      (message "false")
+      )
+    )
+(isGreaterThanFillColumn 10)
+#+END_SRC
+
+#+RESULTS: Example 2 of defun
+: false
